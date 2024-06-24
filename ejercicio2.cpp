@@ -8,15 +8,19 @@ int main (){
 	cout<<"Ingrese segundo numero: ";cin>>b;
 	c=0;
 	i=1;
-	while ((i<=a) && (i<=b)){
-		if ((a%i==0) && (b%i==0)){
-			c=c+1;
+	if (a==b)
+		cout<<"No pueden ser numeros iguales.";
+	else {	
+		while ((i<=a) && (i<=b)){
+			if ((a%i==0) && (b%i==0)){
+				c=c+1;
+			}
+			i=i+1;
 		}
-		i=i+1;
+		if (c>1)
+			cout<<"No son PESI.";
+		else
+			cout<<"Son PESI.";
 	}
-	if (c>1)
-		cout<<"No son PESI.";
-	else
-		cout<<"Son PESI.";
 	return 0;
 }
