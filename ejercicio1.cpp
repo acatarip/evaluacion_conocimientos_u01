@@ -21,11 +21,15 @@ int main (){
 			cout<<"El resultado es "<<r;
 		break;
 		case '/':
-			r=op1/op2;
-			cout<<"El resultado es "<<r;
+			if (op2==0)
+				cout<<"Segundo numero invalido.";
+			else{
+				r=op1/op2;
+				cout<<"El resultado es "<<r;
+			}
 		break;
 		default:
-		cout<<"Operador no valido."
+		cout<<"Operador no valido.";
 		break;
 	}
 	return 0;
