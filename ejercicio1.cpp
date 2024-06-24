@@ -10,17 +10,23 @@ int main (){
 	switch (op){
 		case '+':
 			r=op1+op2;
+			cout<<"El resultado es "<<r;
 		break;
 		case '-':
 			r=op1-op2;
+			cout<<"El resultado es "<<r;
 		break;
 		case '*':
 			r=op1*op2;
+			cout<<"El resultado es "<<r;
 		break;
 		case '/':
 			r=op1/op2;
+			cout<<"El resultado es "<<r;
+		break;
+		default:
+		cout<<"Operador no valido."
 		break;
 	}
-	cout<<"El resultado es "<<r;
 	return 0;
 }
