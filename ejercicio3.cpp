@@ -9,9 +9,13 @@ int main (){
 	int n;
 	double sum;
 	cout<<"Ingrese n: "; cin>>n;
-	sum = suma(n);
-	cout<<"La sumatoria es "<<sum<<".";
-	
+	if (n>=1){
+		sum = suma(n);
+		cout<<"La sumatoria es "<<sum<<".";
+	}
+	else{
+		cout<<"Numero no valido.";
+	}
 	return 0;
 }
 
